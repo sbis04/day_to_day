@@ -1,15 +1,14 @@
 # day_to_day
 
-A new Flutter project.
+An app for creating daily routine. 
 
-## Getting Started
+## Info
 
-This project is a starting point for a Flutter application.
+1) This Flutter project gives the beautiful UI for the "Day To Day" app, which would help users maintain a daily routine.
+2) The app has an awesome looking "Robo" in every screen.
+3) The app provides a very clean design with beautiful animations.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
+## Flutter Docs
 
 For help getting started with Flutter, view our 
 [online documentation](https://flutter.io/docs), which offers tutorials, 
