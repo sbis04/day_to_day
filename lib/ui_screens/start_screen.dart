@@ -7,30 +7,25 @@ class StartScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: appBar(),
-      body: Material(
-        child: Container(
-          color: Colors.white,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Column(
+      body: Flex(
+        direction: Axis.horizontal,
+        children: <Widget>[
+          Expanded(
+            child: Container(
+              color: Colors.white,
+              child: Column(
                 children: <Widget>[
                   robotImage(),
                   SizedBox(height: 50),
-                  Text(
-                    'DAY\n To\nDAY',
-                    style: TextStyle(
-                        fontSize: 50,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.deepPurple[400]),
-                  ),
+                  textMaker('DAY\n To\nDAY', 50, FontWeight.bold,
+                      Colors.deepPurple[400], null),
                   SizedBox(height: 100),
-                  button(context, 'CREATE', '/name', ''),
+                  button(context, 'CREATE', '/name'),
                 ],
               ),
-            ],
+            ),
           ),
-        ),
+        ],
       ),
     );
   }

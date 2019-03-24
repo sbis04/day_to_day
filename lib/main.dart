@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       home: StartScreen(),
       routes: <String, WidgetBuilder>{
         '/name': (BuildContext context) => NameScreen(),
-        '/day': (BuildContext context) => DayScreen(''),
+        '/day': (BuildContext context) => DayScreen(),
       },
     );
   }

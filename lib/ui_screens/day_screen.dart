@@ -3,28 +3,6 @@ import 'package:day_to_day/ui_components/robot_image.dart';
 import 'package:flutter/material.dart';
 
 class DayScreen extends StatelessWidget {
-  final String _name;
-  DayScreen(this._name);
-
-  final List day = [
-    'SUNDAY',
-    'MONDAY',
-    'TUESDAY',
-    'WEDNESDAY',
-    'THURSDAY',
-    'FRIDAY',
-    'SATURDAY'
-  ];
-  final List color = [
-    Colors.purple,
-    Colors.redAccent,
-    Colors.redAccent,
-    Colors.purple,
-    Colors.purple,
-    Colors.redAccent,
-    Colors.redAccent
-  ];
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,18 +13,16 @@ class DayScreen extends StatelessWidget {
           children: <Widget>[
             robotImage(),
             SizedBox(height: 40),
-            Text(
-              "Hi, $_name !",
-              style: TextStyle(fontSize: 30, fontFamily: 'BalooChettan'),
-            ),
+            textMaker("Hi, there !", 30, null, null, 'BalooChettan'),
             Expanded(
               child: GridView.builder(
                 physics: BouncingScrollPhysics(),
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2),
-                itemCount: day.length,
+                    crossAxisCount: 3),
+                itemCount: 31,
                 itemBuilder: (BuildContext context, int i) {
-                  return cardDay(day[i], color[i]);
+                  return cardDay('DAY ${i + 1}',
+                      i % 2 == 0 ? Colors.purple : Colors.redAccent);
                 },
               ),
             ),
@@ -62,11 +38,9 @@ Widget cardDay(String day, Color color) {
     padding: const EdgeInsets.all(20.0),
     child: Card(
       child: Center(
-          child: Text(
-        day,
-        style: TextStyle(fontSize: 20, color: Colors.white),
-      )),
-      elevation: 10,
+        child: textMaker(day, 20, null, Colors.white, null),
+      ),
+      elevation: 12,
       color: color,
     ),
   );
