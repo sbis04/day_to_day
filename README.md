@@ -8,6 +8,16 @@ This is the UI of an app for creating daily routine.
 2) The app has an awesome looking "Robo" in every screen.
 3) The app provides a very clean design with beautiful animations.
 
+## Installation
+
+```bash
+flutter run --release
+```
+
+## Screenshot
+
+
+
 ## Flutter Docs
 
 For help getting started with Flutter, view 
