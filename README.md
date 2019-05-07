@@ -17,7 +17,7 @@ flutter run --release
 ## Screenshot
 
 <p align="left">
-  <img src="">
+  <img src="https://github.com/sbis04/day_to_day/blob/master/screenshot/daytoday.gif">
 </p>
 
 ## Flutter Docs
