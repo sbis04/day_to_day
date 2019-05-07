@@ -1,6 +1,6 @@
 # day_to_day
 
-An app for creating daily routine. 
+This is the UI of an app for creating daily routine. 
 
 ## Info
 
